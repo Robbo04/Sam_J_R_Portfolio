@@ -15,7 +15,9 @@ class ProjectsSection extends StatelessWidget {
       subtitle: "A selection of things I've built.",
       child: LayoutBuilder(
         builder: (context, constraints) {
-          final cols = constraints.maxWidth > 960 ? 3 : 2;
+          final width = constraints.maxWidth;
+          final cols = width > 960 ? 3 : width > 600 ? 2 : 1;
+          final ratio = cols == 1 ? 1.4 : cols == 2 ? 0.92 : 0.82;
           return GridView.builder(
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
@@ -23,7 +25,7 @@ class ProjectsSection extends StatelessWidget {
               crossAxisCount: cols,
               crossAxisSpacing: 24,
               mainAxisSpacing: 24,
-              childAspectRatio: 0.82,
+              childAspectRatio: ratio,
             ),
             itemCount: portfolioProjects.length,
             itemBuilder: (_, i) => _ProjectCard(project: portfolioProjects[i]),
@@ -69,24 +71,25 @@ class _ProjectCard extends StatelessWidget {
             ClipRRect(
               borderRadius:
                   const BorderRadius.vertical(top: Radius.circular(14)),
-              child: project.imagePath != null
-                  ? Image.asset(
-                      project.imagePath!,
-                      height: 190,
-                      width: double.infinity,
-                      fit: BoxFit.cover,
-                    )
-                  : Container(
-                      height: 190,
-                      color: AppColors.surface,
-                      child: const Center(
-                        child: Icon(
-                          Icons.image_outlined,
-                          color: AppColors.textMuted,
-                          size: 52,
+              child: AspectRatio(
+                aspectRatio: 16 / 9,
+                child: project.imagePath != null
+                    ? Image.asset(
+                        project.imagePath!,
+                        width: double.infinity,
+                        fit: BoxFit.cover,
+                      )
+                    : Container(
+                        color: AppColors.surface,
+                        child: const Center(
+                          child: Icon(
+                            Icons.image_outlined,
+                            color: AppColors.textMuted,
+                            size: 52,
+                          ),
                         ),
                       ),
-                    ),
+              ),
             ),
             Expanded(
               child: Padding(
