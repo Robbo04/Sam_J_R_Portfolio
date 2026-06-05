@@ -38,7 +38,7 @@ class NavBar extends StatelessWidget {
                 GestureDetector(
                   onTap: onHome,
                   child: const Text(
-                    'Sam',
+                    'Sam J. Robertson Portfolio',
                     style: TextStyle(
                       color: AppColors.accent,
                       fontSize: 22,

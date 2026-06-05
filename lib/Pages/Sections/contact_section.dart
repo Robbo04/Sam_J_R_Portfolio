@@ -21,27 +21,27 @@ class ContactSection extends StatelessWidget {
               _ContactCard(
                 icon: Icons.email_outlined,
                 label: 'EMAIL',
-                value: 'your@email.com',
+                value: 's5robertsonwork@outlook.com',
                 onTap: () {
-                  // TODO: launchUrl(Uri.parse('mailto:your@email.com'))
+                  // TODO: launchUrl(Uri.parse('mailto:s5robertsonwork@outlook.com'))
                 },
               ),
               const SizedBox(width: 20),
               _ContactCard(
                 icon: Icons.code_rounded,
                 label: 'GITHUB',
-                value: 'github.com/yourusername',
+                value: 'https://github.com/Robbo04',
                 onTap: () {
-                  // TODO: launchUrl(Uri.parse('https://github.com/yourusername'))
+                  // TODO: launchUrl(Uri.parse('https://github.com/Robbo04'))
                 },
               ),
               const SizedBox(width: 20),
               _ContactCard(
                 icon: Icons.link_rounded,
                 label: 'LINKEDIN',
-                value: 'linkedin.com/in/yourusername',
+                value: 'https://www.linkedin.com/in/sam-robertson-46a491309',
                 onTap: () {
-                  // TODO: launchUrl(Uri.parse('https://linkedin.com/in/yourusername'))
+                  // TODO: launchUrl(Uri.parse('https://www.linkedin.com/in/sam-robertson-46a491309'))
                 },
               ),
             ],

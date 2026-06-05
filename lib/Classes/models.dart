@@ -41,30 +41,66 @@ class Education {
 
 // ─── Portfolio Data (replace with your own) ───────────────────────────────────
 
-const List<Project> portfolioProjects = [
+const List<Project> portfolioProjects = [  
   Project(
-    title: 'Project One',
+    title: 'Dissertation: "Dumb" vs "Smart" AI in Stealth Games',
     description:
         'A brief description of what this project does and the problem it solves.',
-    tags: ['Flutter', 'Dart', 'Firebase'],
+    tags: ['Unreal Engine', 'AI'],
+    imagePath: 'lib/Resources/Images/stealth.png',
   ),
   Project(
-    title: 'Project Two',
+    title: 'Commercial Game: "Temple Trouble" - Nominated for best student game at Tiga Awards 2025',
     description:
         'A brief description of what this project does and the problem it solves.',
-    tags: ['Unity', 'C#', 'Game Dev'],
+    tags: ['Unreal Engine', 'Group Game', 'Optimisation', 'Final Year Project'],
   ),
   Project(
-    title: 'Project Three',
+    title: 'Global Game Jam 2025: "Washing Fever" - 2nd Place at UWE Bristol',
     description:
         'A brief description of what this project does and the problem it solves.',
-    tags: ['Android', 'Kotlin'],
+    tags: ['Unity', 'Group Game', 'Game Jam'],
   ),
   Project(
-    title: 'Project Four',
+    title: 'Global Game Jam 2026 - "Ugly Waters Duty"',
+    description: 'description',
+    tags: ['Unity', 'Group Game', 'Game Jam'],
+  ),
+  Project(
+    title: 'Advanced Technology',
     description:
         'A brief description of what this project does and the problem it solves.',
-    tags: ['Python', 'FastAPI'],
+    tags: ['Unreal Engine', 'Rendering', 'Unity', 'Chronic Conditions', 'Final Year Project'],
+  ),
+  Project(
+    title: 'Gameplay Programming - Magic Action Platformer',
+    description:
+        'A brief description of what this project does and the problem it solves.',
+    tags: ['Unreal Engine', 'Game Design', '2nd year project'],
+  ),
+  Project(
+    title: 'C++ platformer',
+    description:
+        'A brief description of what this project does and the problem it solves.',
+    tags: ['C++', 'SFML', '2D Game', '1st year project'],
+  ),
+  Project(
+    title: 'HobbyGeekApp',
+    description:
+        'A brief description of what this project does and the problem it solves.',
+    tags: ['Flutter', 'Web/App Development', 'API Integration'],
+  ),
+  Project(
+    title: 'Personal Portfolio Website',
+    description:
+        'A brief description of what this project does and the problem it solves.',
+    tags: ['Flutter', 'Web Development',],
+  ),
+  Project(
+    title: 'Resellers Bookeeping Application',
+    description:
+        'A brief description of what this project does and the problem it solves.',
+    tags: ['Flutter', 'Client Work'],
   ),
 ];
 
@@ -90,5 +126,12 @@ const List<Education> portfolioEducation = [
     period: '2022 – 2025',
     description:
         'Relevant courses: Comprehensive Creative Technologies Project (Exploring "Dumb" vs "Smart" AI in stealth games) - Commercial Games Development - Gameplay Programming (Unreal Engine) - Advanced Technology - Play & Games (Tabletop Design) - Game Engine Programming (Unity & Unreal) - Games in C++ - Programming in Python.',
+  ),
+  Education(
+    institution: 'City of Bristol College',
+    degree: 'BTEC Level 3 Extended Diploma in Computing (D*D*D)',
+    period: '2020 – 2022',
+    description:
+        'Relevant courses: software development - networking - security - virtualisation - project management and systems fundamentals',
   ),
 ];
