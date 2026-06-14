@@ -55,17 +55,20 @@ const List<Project> portfolioProjects = [
     description:
         'Tiga Awards 2025 nominee. An Isometric, Puzzle-Platforming Adventure, with the core gameplay loop using an ancient hammer to interact with the world.',
     tags: ['Unreal Engine', 'Group Game', 'Optimisation', 'Final Year Project'],
+    imagePath: '/Users/samrobertson/Development/Sam_J_R_Portfolio/lib/Resources/Images/projects/Gameplay.png',
   ),
   Project(
     title: 'Global Game Jam 2025: "Washing Fever"',
     description:
         'Placed 2nd out of 15 uwe teams. Theme: "BUBBLES". This game is a rhythm-based, 2D, music game where I collaborated with a team including game devs, musicians, digital media and artists.',
     tags: ['Unity', 'Group Game', 'Game Jam', 'Group Collaboration'],
+    imagePath: 'lib/Resources/Images/projects/WashingFever.png',
   ),
   Project(
     title: 'Global Game Jam 2026 - "Ugly Waters Duty"',
     description: 'Theme: "MASKS". This 3d game involves you, a mechanic on an oil rig, working during a storm before to stop it sinking. I collaborated with a team including game devs, musicians and artists.',
     tags: ['Unity', 'Group Game', 'Game Jam', 'Group Collaboration'],
+    imagePath: 'lib/Resources/Images/projects/UglyWatersDuty.png',
   ),
   Project(
     title: 'Advanced Technology - Final Year Projects',
