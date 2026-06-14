@@ -45,61 +45,62 @@ const List<Project> portfolioProjects = [
   Project(
     title: 'Dissertation: "Dumb" vs "Smart" AI in Stealth Games',
     description:
-        'A brief description of what this project does and the problem it solves.',
+        'For my dissertation, I created a stealth environment with two different enemmy AIs in Unreal Engine to explore whether a "smarter" more realistic behaviour would enhance or hinder the experience over typical game behaviours.',
     tags: ['Unreal Engine', 'AI'],
     imagePath: 'lib/Resources/Images/stealth.png',
   ),
   Project(
-    title: 'Commercial Game: "Temple Trouble" - Nominated for best student game at Tiga Awards 2025',
+    //Tiga awards 2025 nominee for student best game
+    title: 'Commercial Game: "Temple Trouble"',
     description:
-        'A brief description of what this project does and the problem it solves.',
+        'Tiga Awards 2025 nominee. An Isometric, Puzzle-Platforming Adventure, with the core gameplay loop using an ancient hammer to interact with the world.',
     tags: ['Unreal Engine', 'Group Game', 'Optimisation', 'Final Year Project'],
   ),
   Project(
-    title: 'Global Game Jam 2025: "Washing Fever" - 2nd Place at UWE Bristol',
+    title: 'Global Game Jam 2025: "Washing Fever"',
     description:
-        'A brief description of what this project does and the problem it solves.',
-    tags: ['Unity', 'Group Game', 'Game Jam'],
+        'Placed 2nd out of 15 uwe teams. Theme: "BUBBLES". This game is a rhythm-based, 2D, music game where I collaborated with a team including game devs, musicians, digital media and artists.',
+    tags: ['Unity', 'Group Game', 'Game Jam', 'Group Collaboration'],
   ),
   Project(
     title: 'Global Game Jam 2026 - "Ugly Waters Duty"',
-    description: 'description',
-    tags: ['Unity', 'Group Game', 'Game Jam'],
+    description: 'Theme: "MASKS". This 3d game involves you, a mechanic on an oil rig, working during a storm before to stop it sinking. I collaborated with a team including game devs, musicians and artists.',
+    tags: ['Unity', 'Group Game', 'Game Jam', 'Group Collaboration'],
   ),
   Project(
-    title: 'Advanced Technology',
+    title: 'Advanced Technology - Final Year Projects',
     description:
-        'A brief description of what this project does and the problem it solves.',
+        'This module included 2 projects, the first tackles rendering a different art style in run time, whilst the second focuses on gamification for chronic conditions.',
     tags: ['Unreal Engine', 'Rendering', 'Unity', 'Chronic Conditions', 'Final Year Project'],
   ),
   Project(
-    title: 'Gameplay Programming - Magic Action Platformer',
+    title: 'Gameplay Programming - 2nd Year Project',
     description:
-        'A brief description of what this project does and the problem it solves.',
+        'Given the freedom to create a 3d game demo using Unreal Engine, I created a magic action platformer where the player could cast projectile spells and dash which included special environmental interactions.',
     tags: ['Unreal Engine', 'Game Design', '2nd year project'],
   ),
   Project(
     title: 'C++ platformer',
     description:
-        'A brief description of what this project does and the problem it solves.',
+        'My first year project, a 2D platformer game built in C++ using the SFML library. This project focused on basic game mechanics and collision detection.',
     tags: ['C++', 'SFML', '2D Game', '1st year project'],
   ),
   Project(
     title: 'HobbyGeekApp',
     description:
-        'A brief description of what this project does and the problem it solves.',
+        'My first Flutter project, creating a media tracker for wishlists, owned and completed media. Currently setup API integration for Games and Anime but looking to add movies and tv.',
     tags: ['Flutter', 'Web/App Development', 'API Integration'],
   ),
   Project(
     title: 'Personal Portfolio Website',
     description:
-        'A brief description of what this project does and the problem it solves.',
+        'A personal portfolio website built with Flutter, showcasing my projects, skills, and education. The website is designed to be responsive and visually appealing.',
     tags: ['Flutter', 'Web Development',],
   ),
   Project(
     title: 'Resellers Bookeeping Application',
     description:
-        'A brief description of what this project does and the problem it solves.',
+        'A project i took on for a client, creating a flutter application to help keep track of logistics, inventory, sales and calculate profit margins and taxes. Designed to prioritse ease of use and simplicity to match clients needs.',
     tags: ['Flutter', 'Client Work'],
   ),
 ];

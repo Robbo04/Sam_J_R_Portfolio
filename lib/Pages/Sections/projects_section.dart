@@ -6,7 +6,7 @@ import '../../Widgets/section_widgets.dart';
 
 class ProjectsSection extends StatelessWidget {
   const ProjectsSection({super.key});
-
+  
   @override
   Widget build(BuildContext context) {
     return SectionWrapper(
@@ -41,6 +41,7 @@ class _ProjectCard extends StatelessWidget {
 
   final Project project;
 
+  
   @override
   Widget build(BuildContext context) {
     return HoverBuilder(

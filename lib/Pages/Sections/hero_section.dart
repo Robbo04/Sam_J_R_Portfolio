@@ -43,7 +43,7 @@ class HeroSection extends StatelessWidget {
                 ),
                 const SizedBox(height: 22),
                 const Text(
-                  'I build software, games, and apps that\nare fast, polished, and built to last.',
+                  'I\'m a UWE Bristol University Games Technology graduate, and I build software, games, and apps that\nare fast, polished, and built to last.',
                   style: TextStyle(
                     color: AppColors.textMuted,
                     fontSize: 19,
