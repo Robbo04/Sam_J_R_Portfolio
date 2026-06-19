@@ -59,7 +59,9 @@ class _EducationCard extends StatelessWidget {
                         fontWeight: FontWeight.w700,
                       ),
                     ),
-                    _PeriodBadge(period: education.period),
+
+                    if (education.period != null)
+                      _PeriodBadge(period: education.period!),
                   ],
                 ),
                 const SizedBox(height: 6),
@@ -67,7 +69,7 @@ class _EducationCard extends StatelessWidget {
                   education.degree,
                   style: const TextStyle(
                     color: AppColors.accent,
-                    fontSize: 14,
+                    fontSize: 24,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -77,7 +79,7 @@ class _EducationCard extends StatelessWidget {
                     education.description!,
                     style: const TextStyle(
                       color: AppColors.textMuted,
-                      fontSize: 13,
+                      fontSize: 14,
                       height: 1.55,
                     ),
                   ),

@@ -13,7 +13,7 @@ class Footer extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           const Text(
-            '© 2026 Sam. Built with Flutter.',
+            '© 2026 Sam Robertson.',
             style: TextStyle(color: AppColors.textMuted, fontSize: 13),
           ),
           Row(
@@ -25,7 +25,7 @@ class Footer extends StatelessWidget {
               ),
               const SizedBox(width: 6),
               const Text(
-                'Made with passion',
+                'Made from scratch with Flutter',
                 style: TextStyle(color: AppColors.textMuted, fontSize: 13),
               ),
             ],

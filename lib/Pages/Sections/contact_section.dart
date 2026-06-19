@@ -12,7 +12,7 @@ class ContactSection extends StatelessWidget {
     return SectionWrapper(
       color: AppColors.bg,
       title: "Let's Connect",
-      subtitle: 'Open to opportunities, collaborations, or just a chat.',
+      subtitle: 'Open to work, freelance opportunities, and collaborations. Feel free to drop a message!',
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
