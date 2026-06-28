@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../Classes/app_colors.dart';
 import '../../Widgets/buttons.dart';
+import '../../Interactives/FadeIn_SlideUp.dart';
 
 class HeroSection extends StatelessWidget {
   const HeroSection({super.key, required this.onViewProjects});
@@ -10,66 +11,75 @@ class HeroSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final h = MediaQuery.sizeOf(context).height;
+
     return Container(
       height: h,
       color: AppColors.bg,
       padding: const EdgeInsets.symmetric(horizontal: 80),
       child: Row(
         children: [
+          // LEFT SIDE
           Expanded(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Text(
-                  'SOFTWARE  ·  GAMES  ·  APPS',
-                  style: TextStyle(
-                    color: AppColors.accent,
-                    fontSize: 13,
-                    fontWeight: FontWeight.w600,
-                    letterSpacing: 4,
-                  ),
-                ),
-                const SizedBox(height: 20),
-                const Text(
-                  "Hi, I'm Sam.",
-                  style: TextStyle(
-                    color: AppColors.text,
-                    fontSize: 72,
-                    fontWeight: FontWeight.w800,
-                    height: 1.1,
-                    letterSpacing: -1.5,
-                  ),
-                ),
-                const SizedBox(height: 22),
-                const Text(
-                  'I build fast, stable gameplay systems and cross‑platform apps focused on performance and long‑term reliability. I thrive in group projects and enjoy the problem‑solving that comes with debugging.',
-                  style: TextStyle(
-                    color: AppColors.textMuted,
-                    fontSize: 19,
-                    height: 1.65,
-                  ),
-                ),
-                const SizedBox(height: 44),
-                Row(
-                  children: [
-                    PrimaryButton(
-                      label: 'View Projects',
-                      onTap: onViewProjects,
+            child: FadeSlide(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'SOFTWARE  ·  GAMES  ·  APPS',
+                    style: TextStyle(
+                      color: AppColors.accent,
+                      fontSize: 13,
+                      fontWeight: FontWeight.w600,
+                      letterSpacing: 4,
                     ),
-                    const SizedBox(width: 18),
-                    BorderButton(
-                      label: 'Download Resume',
-                      icon: Icons.download_rounded,
-                      onTap: () {
-                        // TODO: launch resume PDF URL
-                      },
+                  ),
+                  const SizedBox(height: 20),
+
+                  const Text(
+                    "Hi, I'm Sam.",
+                    style: TextStyle(
+                      color: AppColors.text,
+                      fontSize: 72,
+                      fontWeight: FontWeight.w800,
+                      height: 1.1,
+                      letterSpacing: -1.5,
                     ),
-                  ],
-                ),
-              ],
+                  ),
+                  const SizedBox(height: 22),
+
+                  const Text(
+                    'I build fast, stable gameplay systems and cross‑platform apps focused on performance and long‑term reliability. I thrive in group projects and enjoy the problem‑solving that comes with debugging.',
+                    style: TextStyle(
+                      color: AppColors.textMuted,
+                      fontSize: 19,
+                      height: 1.65,
+                    ),
+                  ),
+                  const SizedBox(height: 44),
+
+                  Row(
+                    children: [
+                      PrimaryButton(
+                        label: 'View Projects',
+                        onTap: onViewProjects,
+                      ),
+                      const SizedBox(width: 18),
+                      BorderButton(
+                        label: 'Download Resume',
+                        icon: Icons.download_rounded,
+                        onTap: () {
+                          // TODO: launch resume PDF URL
+                        },
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
+
+          // RIGHT SIDE
           const _HeroOrb(),
         ],
       ),
@@ -90,6 +100,8 @@ class _HeroOrb extends StatelessWidget {
         children: [
           _ring(380, 0.10),
           _ring(290, 0.20),
+
+          // Glow ring
           Container(
             width: 210,
             height: 210,
@@ -103,6 +115,8 @@ class _HeroOrb extends StatelessWidget {
               ),
             ),
           ),
+
+          // Inner circle
           Container(
             width: 170,
             height: 170,
