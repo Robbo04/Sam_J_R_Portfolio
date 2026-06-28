@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../Classes/app_colors.dart';
 import '../../Widgets/buttons.dart';
-import '../../Interactives/FadeIn_SlideUp.dart';
+import '../../Widgets/fadeIn_slideUp.dart';
 
 class HeroSection extends StatelessWidget {
   const HeroSection({super.key, required this.onViewProjects});
@@ -125,11 +125,17 @@ class _HeroOrb extends StatelessWidget {
               color: AppColors.card,
               border: Border.all(color: AppColors.accent, width: 2),
             ),
-            child: const Icon(
-              Icons.person_rounded,
-              color: AppColors.textMuted,
-              size: 84,
+            child: ClipOval(
+              child: Image.asset(
+                'lib/Resources/Images/ProfilePic.png',
+                fit: BoxFit.cover,
+              ),
             ),
+            // child: const Icon(
+            //   Icons.person_rounded,
+            //   color: AppColors.textMuted,
+            //   size: 84,
+            // ),
           ),
         ],
       ),

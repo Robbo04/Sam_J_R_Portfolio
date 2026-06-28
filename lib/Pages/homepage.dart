@@ -7,18 +7,9 @@ import 'Sections/skills_section.dart';
 import 'Sections/education_section.dart';
 import 'Sections/contact_section.dart';
 import 'Sections/footer.dart';
+import '../Widgets/fadeIn.dart';
+import '../Widgets/particle_field.dart';
 
-
-
-// ─── Sample Data (replace with your own) ─────────────────────────────────────
-
-
-
-// ─── Colours ──────────────────────────────────────────────────────────────────
-
-
-
-// ─── HomePage ─────────────────────────────────────────────────────────────────
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -58,6 +49,13 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: AppColors.bg,
       body: Stack(
         children: [
+          Positioned.fill(
+        child: FadeIn(
+          child: ParticleField(height: 600),
+        ),
+      ),
+
+
           SingleChildScrollView(
             controller: _scrollController,
             child: Column(
