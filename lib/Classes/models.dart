@@ -98,6 +98,7 @@ const List<Project> portfolioProjects = [
     tags: ['Flutter', 'Web/App Development', 'API Integration'],
     imagePath: '/Users/samrobertson/Development/Sam_J_R_Portfolio/lib/Resources/Images/projects/Geek.jpeg',
   ),
+  /*
   Project(
     title: 'Personal Portfolio Website',
     description:
@@ -105,6 +106,7 @@ const List<Project> portfolioProjects = [
     tags: ['Flutter', 'Web Development',],
     imagePath: '/Users/samrobertson/Development/Sam_J_R_Portfolio/lib/Resources/Images/projects/Portfolio.png',
   ),
+  */
   Project(
     title: 'Resellers Bookeeping Application',
     description:
