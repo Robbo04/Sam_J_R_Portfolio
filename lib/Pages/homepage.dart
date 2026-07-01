@@ -8,7 +8,6 @@ import 'Sections/education_section.dart';
 import 'Sections/contact_section.dart';
 import 'Sections/footer.dart';
 import '../Widgets/fadeIn.dart';
-import '../Widgets/particle_field.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -49,13 +48,6 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: AppColors.bg,
       body: Stack(
         children: [
-          Positioned.fill(
-        child: FadeIn(
-          child: ParticleField(height: 600),
-        ),
-      ),
-
-
           SingleChildScrollView(
             controller: _scrollController,
             child: Column(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../Classes/app_colors.dart';
 import '../../Widgets/buttons.dart';
 import '../../Widgets/fadeIn_slideUp.dart';
+import '../../Widgets/particle_field.dart';
 
 class HeroSection extends StatelessWidget {
   const HeroSection({super.key, required this.onViewProjects});
@@ -15,12 +16,19 @@ class HeroSection extends StatelessWidget {
     return Container(
       height: h,
       color: AppColors.bg,
-      padding: const EdgeInsets.symmetric(horizontal: 80),
-      child: Row(
+      child: Stack(
         children: [
-          // LEFT SIDE
-          Expanded(
-            child: FadeSlide(
+          Positioned.fill(
+            child: ParticleField(height: h),
+          ),
+          Positioned.fill(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 80),
+              child: Row(
+                children: [
+                  // LEFT SIDE
+                  Expanded(
+                    child: FadeSlide(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -79,8 +87,12 @@ class HeroSection extends StatelessWidget {
             ),
           ),
 
-          // RIGHT SIDE
-          const _HeroOrb(),
+                  // RIGHT SIDE
+                  const _HeroOrb(),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
@@ -118,8 +130,8 @@ class _HeroOrb extends StatelessWidget {
 
           // Inner circle
           Container(
-            width: 170,
-            height: 170,
+            width: 250,
+            height: 250,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: AppColors.card,
