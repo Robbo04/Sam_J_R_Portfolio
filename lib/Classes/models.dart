@@ -1,17 +1,19 @@
+import 'package:flutter/material.dart';
+
 // ─── Data Models ─────────────────────────────────────────────────────────────
 
 class Project {
   final String title;
   final String description;
-  final String? imagePath;
+  final Image image;
   final List<String> tags;
   final String? githubUrl;
   final String? liveUrl;
 
-  const Project({
+  Project({
     required this.title,
     required this.description,
-    this.imagePath,
+    required this.image,
     this.tags = const [],
     this.githubUrl,
     this.liveUrl,
@@ -41,13 +43,13 @@ class Education {
 
 // ─── Portfolio Data (replace with your own) ───────────────────────────────────
 
-const List<Project> portfolioProjects = [  
+final List<Project> portfolioProjects = [  
   Project(
     title: 'Dissertation: "Dumb" vs "Smart" AI in Stealth Games',
     description:
         'For my dissertation, I created a stealth environment with two different enemmy AIs in Unreal Engine to explore whether a "smarter" more realistic behaviour would enhance or hinder the experience over typical game behaviours.',
     tags: ['Unreal Engine', 'AI'],
-    imagePath: '/Users/samrobertson/Development/Sam_J_R_Portfolio/lib/Resources/Images/projects/stealth.png',
+    image: Image.asset('resources/images/projects/DissBalcony.png'),
   ),
   Project(
     //Tiga awards 2025 nominee for student best game
@@ -55,48 +57,48 @@ const List<Project> portfolioProjects = [
     description:
         'Tiga Awards 2025 nominee. An Isometric, Puzzle-Platforming Adventure, with the core gameplay loop using an ancient hammer to interact with the world.',
     tags: ['Unreal Engine', 'Group Game', 'Optimisation', 'Final Year Project'],
-    imagePath: '/Users/samrobertson/Development/Sam_J_R_Portfolio/lib/Resources/Images/projects/TTrelicRoom.png',
+    image: Image.asset('resources/images/projects/TTrelicRoom.png'),
   ),
   Project(
     title: 'Global Game Jam 2025: "Washing Fever"',
     description:
         'Placed 2nd out of 15 uwe teams. Theme: "BUBBLES". This game is a rhythm-based, 2D, music game where I collaborated with a team including game devs, musicians, digital media and artists.',
     tags: ['Unity', 'Group Game', 'Game Jam', 'Group Collaboration'],
-    imagePath: '/Users/samrobertson/Development/Sam_J_R_Portfolio/lib/Resources/Images/projects/WFl2.png',
+    image: Image.asset('assets/resources/images/projects/WFl2.png'),
   ),
   Project(
     title: 'Global Game Jam 2026 - "Ugly Waters Duty"',
     description: 'Theme: "MASKS". This 3d game involves you, a mechanic on an oil rig, working during a storm before to stop it sinking. I collaborated with a team including game devs, musicians and artists.',
     tags: ['Unity', 'Group Game', 'Game Jam', 'Group Collaboration'],
-    imagePath: 'lib/Resources/Images/projects/UglyWatersDuty.png', //placeholder
+    image: Image.asset('assets/resources/images/projects/UglyWatersDuty.png'), //placeholder
   ),
   Project(
     title: 'Advanced Technology - Final Year Projects',
     description:
         'This module included 2 projects, the first tackles rendering a different art style in run time, whilst the second focuses on gamification for chronic conditions.',
     tags: ['Unreal Engine', 'Rendering', 'Unity', 'Chronic Conditions', 'Final Year Project'],
-    imagePath: '/Users/samrobertson/Development/Sam_J_R_Portfolio/lib/Resources/Images/projects/AT_Toon.png',
+    image: Image.asset('assets/resources/images/projects/AT_Toon.png'),
   ),
   Project(
     title: 'Gameplay Programming - 2nd Year Project',
     description:
         'Given the freedom to create a 3d game demo using Unreal Engine, I created a magic action platformer where the player could cast projectile spells and dash which included special environmental interactions.',
     tags: ['Unreal Engine', 'Game Design', '2nd year project'],
-    imagePath: '/Users/samrobertson/Development/Sam_J_R_Portfolio/lib/Resources/Images/projects/Gameplay.png',
+    image: Image.asset('assets/resources/images/projects/Gameplay.png'),
   ),
   Project(
     title: 'C++ platformer',
     description:
         'My first year project, a 2D platformer game built in C++ using the SFML library. This project focused on basic game mechanics and collision detection.',
     tags: ['C++', 'SFML', '2D Game', '1st year project'],
-    imagePath: '/Users/samrobertson/Development/Sam_J_R_Portfolio/lib/Resources/Images/projects/cppMenu.png',
+    image: Image.asset('assets/resources/images/projects/cppMenu.png'),
   ),
   Project(
     title: 'HobbyGeekApp',
     description:
         'My first Flutter project, creating a media tracker for wishlists, owned and completed media. Currently setup API integration for Games and Anime but looking to add movies and tv.',
     tags: ['Flutter', 'Web/App Development', 'API Integration'],
-    imagePath: '/Users/samrobertson/Development/Sam_J_R_Portfolio/lib/Resources/Images/projects/Geek.jpeg',
+    image: Image.asset('assets/resources/images/projects/Geek.jpeg'),
   ),
   /*
   Project(
@@ -104,7 +106,7 @@ const List<Project> portfolioProjects = [
     description:
         'A personal portfolio website built with Flutter, showcasing my projects, skills, and education. The website is designed to be responsive and visually appealing.',
     tags: ['Flutter', 'Web Development',],
-    imagePath: '/Users/samrobertson/Development/Sam_J_R_Portfolio/lib/Resources/Images/projects/Portfolio.png',
+    image: Image.asset('assets/resources/images/projects/Portfolio.png'),
   ),
   */
   Project(
@@ -112,7 +114,7 @@ const List<Project> portfolioProjects = [
     description:
         'A project i took on for a client, creating a flutter application to help keep track of logistics, inventory, sales and calculate profit margins and taxes. Designed to prioritse ease of use and simplicity to match clients needs.',
     tags: ['Flutter', 'Client Work'],
-    imagePath: '/Users/samrobertson/Development/Sam_J_R_Portfolio/lib/Resources/Images/projects/Resellers.png',
+    image: Image.asset('assets/resources/images/projects/Resellers.png'),
   ),
 ];
 

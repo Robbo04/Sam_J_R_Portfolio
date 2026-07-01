@@ -74,12 +74,8 @@ class _ProjectCard extends StatelessWidget {
                   const BorderRadius.vertical(top: Radius.circular(14)),
               child: AspectRatio(
                 aspectRatio: 16 / 9,
-                child: project.imagePath != null
-                    ? Image.asset(
-                        project.imagePath!,
-                        width: double.infinity,
-                        fit: BoxFit.cover,
-                      )
+                child: project.image != null
+                    ? project.image
                     : Container(
                         color: AppColors.surface,
                         child: const Center(

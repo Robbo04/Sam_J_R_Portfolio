@@ -127,7 +127,7 @@ class _HeroOrb extends StatelessWidget {
             ),
             child: ClipOval(
               child: Image.asset(
-                'lib/Resources/Images/ProfilePic.png',
+                'assets/resources/images/ProfilePic.png',
                 fit: BoxFit.cover,
               ),
             ),
