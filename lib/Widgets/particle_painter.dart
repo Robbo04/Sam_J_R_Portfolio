@@ -14,7 +14,7 @@ class ParticlePainter extends CustomPainter {
 
       switch (p.type) {
         case ParticleType.circle:
-          canvas.drawCircle(p.position, p.size, paint);
+          canvas.drawCircle(p.position, p.size * 0.75, paint);
           break;
 
         case ParticleType.sprinkle:
@@ -22,14 +22,18 @@ class ParticlePainter extends CustomPainter {
           canvas.translate(p.position.dx, p.position.dy);
           canvas.rotate(p.rotation);
 
-          canvas.drawRect(
-            Rect.fromCenter(
-              center: Offset.zero,
-              width: p.size * 2,
-              height: p.size * 0.8,
-            ),
-            paint,
+          final rect = Rect.fromCenter(
+            center: Offset.zero,
+            width: p.size * 2,     // length
+            height: p.size * 0.8,  // thickness
           );
+
+          final rrect = RRect.fromRectAndRadius(
+            rect,
+            Radius.circular(p.size * 0.4), // rounded corners
+          );
+
+          canvas.drawRRect(rrect, paint);
 
           canvas.restore();
           break;

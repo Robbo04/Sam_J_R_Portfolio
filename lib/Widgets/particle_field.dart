@@ -53,6 +53,7 @@ class _ParticleFieldState extends State<ParticleField>
         Particle(
           velocity: Offset.zero,
           size: particleSize,
+          rotationVelocity: (rand.nextDouble() - 0.5) * 2, // Random rotation speed
           baseSize: particleSize,
           rotation: rand.nextDouble() * pi * 2,
           color: rand.nextBool() ? const Color.fromARGB(255, 60, 0, 255) : const Color.fromARGB(255, 86, 2, 169).withOpacity(0.7),
@@ -65,6 +66,8 @@ class _ParticleFieldState extends State<ParticleField>
   }
 
   void _updateParticles(Duration elapsed) {
+    
+    
     if (!mounted) return;
     final delta = _lastElapsed == null
         ? 0.016 // Default to ~60fps on first frame
@@ -78,6 +81,10 @@ class _ParticleFieldState extends State<ParticleField>
 
     for (final p in _particles) {
       p.timeAlive += clampedDelta;
+      
+      p.position += p.velocity * delta;
+      p.rotation += p.rotationVelocity * delta; // confetti style rotation
+
 
       // 1. Continuous gentle floating using sine waves
       final floatX = sin(p.timeAlive * 0.5 + p.rotation) * 20;

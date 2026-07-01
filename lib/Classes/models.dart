@@ -70,7 +70,7 @@ final List<Project> portfolioProjects = [
     title: 'Global Game Jam 2026 - "Ugly Waters Duty"',
     description: 'Theme: "MASKS". This 3d game involves you, a mechanic on an oil rig, working during a storm before to stop it sinking. I collaborated with a team including game devs, musicians and artists.',
     tags: ['Unity', 'Group Game', 'Game Jam', 'Group Collaboration'],
-    image: Image.asset('assets/resources/images/projects/UglyWatersDuty.png'), //placeholder
+    image: Image.asset('assets/resources/images/projects/UWD.png'), //placeholder
   ),
   Project(
     title: 'Advanced Technology - Final Year Projects',

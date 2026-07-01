@@ -12,6 +12,7 @@ class Particle {
   Color color;
   ParticleType type;
   double timeAlive;
+  double rotationVelocity;
 
   Particle({
     required this.velocity,
@@ -20,6 +21,7 @@ class Particle {
     required this.rotation,
     required this.color,
     required this.type,
+    required this.rotationVelocity,
     this.timeAlive = 0,
   }) {
     position = Offset.zero;
