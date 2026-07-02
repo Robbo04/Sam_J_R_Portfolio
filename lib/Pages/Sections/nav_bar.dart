@@ -53,13 +53,13 @@ class NavBar extends StatelessWidget {
                 _NavLink(label: 'Education', onTap: onEducation),
                 _NavLink(label: 'Contact', onTap: onContact),
                 const SizedBox(width: 20),
-                BorderButton(
-                  label: 'Resume',
-                  icon: Icons.download_rounded,
-                  onTap: () {
-                    // TODO: launch resume PDF URL
-                  },
-                ),
+                // BorderButton(
+                //   label: 'Resume',
+                //   icon: Icons.download_rounded,
+                //   onTap: () {
+                //     // TODO: launch resume PDF URL
+                //   },
+                // ),
               ],
             ),
           ),

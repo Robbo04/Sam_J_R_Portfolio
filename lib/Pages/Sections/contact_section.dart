@@ -3,6 +3,7 @@ import '../../Classes/app_colors.dart';
 import '../../Widgets/buttons.dart';
 import '../../Widgets/hover_builder.dart';
 import '../../Widgets/section_widgets.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ContactSection extends StatelessWidget {
   const ContactSection({super.key});
@@ -23,25 +24,27 @@ class ContactSection extends StatelessWidget {
                 label: 'EMAIL',
                 value: 's5robertsonwork@outlook.com',
                 onTap: () {
-                  // TODO: launchUrl(Uri.parse('mailto:s5robertsonwork@outlook.com'))
+                  //to do: launchUrl
                 },
               ),
               const SizedBox(width: 20),
               _ContactCard(
                 icon: Icons.code_rounded,
                 label: 'GITHUB',
-                value: 'https://github.com/Robbo04',
+                value: 'GitHub Profile',
                 onTap: () {
                   // TODO: launchUrl(Uri.parse('https://github.com/Robbo04'))
+                  launchUrl(Uri.parse('https://github.com/Robbo04'));
                 },
               ),
               const SizedBox(width: 20),
               _ContactCard(
                 icon: Icons.link_rounded,
                 label: 'LINKEDIN',
-                value: 'https://www.linkedin.com/in/sam-robertson-46a491309',
+                value: 'LinkedIn Profile',
                 onTap: () {
                   // TODO: launchUrl(Uri.parse('https://www.linkedin.com/in/sam-robertson-46a491309'))
+                  launchUrl(Uri.parse('https://www.linkedin.com/in/sam-robertson-46a491309'));
                 },
               ),
             ],

@@ -73,13 +73,13 @@ class HeroSection extends StatelessWidget {
                         onTap: onViewProjects,
                       ),
                       const SizedBox(width: 18),
-                      BorderButton(
-                        label: 'Download Resume',
-                        icon: Icons.download_rounded,
-                        onTap: () {
-                          // TODO: launch resume PDF URL
-                        },
-                      ),
+                      // //BorderButton(
+                      //   label: 'Download Resume',
+                      //   icon: Icons.download_rounded,
+                      //   onTap: () {
+                      //     // TODO: launch resume PDF URL
+                      //   },
+                      // ),
                     ],
                   ),
                 ],
