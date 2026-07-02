@@ -49,7 +49,7 @@ final List<Project> portfolioProjects = [
     description:
         'For my dissertation, I created a stealth environment with two different enemmy AIs in Unreal Engine to explore whether a "smarter" more realistic behaviour would enhance or hinder the experience over typical game behaviours.',
     tags: ['Unreal Engine', 'AI'],
-    image: Image.asset('resources/images/projects/DissBalcony.png'),
+    image: Image.asset('assets/resources/images/projects/DissBalcony.png'),
   ),
   Project(
     //Tiga awards 2025 nominee for student best game
@@ -57,7 +57,7 @@ final List<Project> portfolioProjects = [
     description:
         'Tiga Awards 2025 nominee. An Isometric, Puzzle-Platforming Adventure, with the core gameplay loop using an ancient hammer to interact with the world.',
     tags: ['Unreal Engine', 'Group Game', 'Optimisation', 'Final Year Project'],
-    image: Image.asset('resources/images/projects/TTrelicRoom.png'),
+    image: Image.asset('assets/resources/images/projects/TTrelicRoom.png'),
   ),
   Project(
     title: 'Global Game Jam 2025: "Washing Fever"',
